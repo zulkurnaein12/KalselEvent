@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LIstActivity">
+
+    <LinearLayout
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/cari"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/lokasi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_place" />
+
+        <ImageView
+            android:id="@+id/waktu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_time" />
+
+        <ImageView
+            android:id="@+id/kategori"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/tambah"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_add" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="Yey....Ditemukan ada 4 Event"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:paddingHorizontal="20dp"
+                android:src="@drawable/android"
+                android:layout_width="390dp"
+                android:layout_height="360dp" />
+            <ImageView
+                android:paddingHorizontal="20dp"
+                android:src="@drawable/uxd"
+                android:layout_width="390dp"
+                android:layout_height="360dp" />
+            <ImageView
+                android:paddingHorizontal="20dp"
+                android:src="@drawable/game"
+                android:layout_width="390dp"
+                android:layout_height="360dp" />
+            <ImageView
+                android:paddingHorizontal="20dp"
+                android:src="@drawable/startup"
+                android:layout_width="390dp"
+                android:layout_height="360dp" />
+        </LinearLayout>
+
+    </ScrollView>>
+
+</RelativeLayout>
